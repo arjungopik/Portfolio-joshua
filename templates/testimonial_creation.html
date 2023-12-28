@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSHUA KANATT</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/testimonial.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <section class="testimonial_creation">
+            <h2>Create testimonial</h2>
+            <form action="/testimonial_creation" method="POST" class="form">
+                <div class="info">
+                    <p>Name*</p>
+                    <input type="text"  name="fname" required>
+                    <p>Email</p>
+                    <input type="text" name="email">
+                    <p>Mobile number</p>
+                    <input type="text" name="mobile_number">
+                </div>
+                <p>Message</p>
+                <div>
+                    <textarea rows="5" name="message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* tesimonail creation */
+:root{
+    --dark-color: #222222;
+    --light-color: #D9D9D9;
+
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+
+}
+body{
+  margin: 0;
+  font-family:"poppins",sans-serif;
+  background: var(--dark-color);
+}
+.wrapper{
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.wrapper .testimonial_creation h2{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 400;
+  
+}
+.wrapper .testimonial_creation input{
+
+    width: 50%;
+} 

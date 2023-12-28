@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSHUA KANATT</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#education-section">Education</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#experience-section">Working Experience</a>
+                    </li>
+                    <li>
+                        <a href="#">education</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- End of nav menu -->
+            <nav class="mobile-nav">
+                <div class="menu-icon">
+                    <img src="{{ url_for('static',filename='img/image 40.png') }}" alt="">
+                </div>
+            </nav>
+
+            <div class="hero-section">
+                <div class="left">
+                    <img class="asra-1" src="{{ url_for('static',filename='img/asra.png') }}" />
+                </div>
+                <div class="right">
+                    <h1>JOSHUA KANATT</h1>
+                    <h2>Founder &Chief Executive - GAMERS TAG</h2>
+                    <p>
+                        NavIC (Navigation with Indian Constellation) is designed to provide “more
+                        accurate domestic navigation” for users in India. It’s designed by ISRO for
+                        accurate real-time positioning, timing services, and messaging.
+                        communications, timing, and location.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <ul>
+                <li><a href="#">linkein</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end of header -->
+    <div class="wrapper">
+        <section class="education-section">
+            <h2>EDUCATION</h2>
+            <div class="timeline">
+                <div class="container left-container">
+                    <img src="{{ url_for('static',filename='img/1.png') }}" alt="">
+                    <div class="textbox">
+                        <h4>Advanced General Management Program, Business General</h4>
+                        <p>
+                            Cohort 06, Business Management
+                            Entrepreneurship <br>
+                            Feb 2023 - Jul 2023</p>
+                    </div>
+                </div>
+                <div class="container right-container">
+                    <div class="textbox">
+                        <h4>Institute of Management Technology, Ghaziabad</h4>
+                        <p>
+                            Advanced General Management Program, Business General
+                            Administration and Management, General <br>
+                            Dec 2022 - Dec 2023</p>
+                    </div>
+                    <img src="{{ url_for('static',filename='img/2.png') }}" alt="">
+                </div>
+                <div class="container left-container">
+                    <img src="{{ url_for('static',filename='img/3.png') }}" alt="">
+                    <div class="textbox">
+                        <h4>Pandit Deendayal Energy University (PDEU)</h4>
+                        <p>
+                            Startup Incubation, Entrepreneurship/Entrepreneurial Studies <br>
+                            Feb 2023 - Sep 2025</p>
+                    </div>
+                </div>
+                <div class="container right-container">
+
+                    <div class="textbox">
+                        <h4>Liverpool John Moores University</h4>
+                        <p>
+                            Master's degree, Data Science <br>
+                            Apr 2021 - Nov 2022
+                        </p>
+                    </div>
+                    <img src="{{ url_for('static',filename='img/4.png') }}" alt="">
+                </div>
+                <div class="container left-container">
+                    <img src="{{ url_for('static',filename='img/5.png') }}" alt="">
+                    <div class="textbox">
+                        <h4>International Institute of Information Technology Bangalore</h4>
+                        <p>
+                            PGDM, DATA SCIENCE <br>
+                            Feb 2020 - Apr 2021</p>
+                    </div>
+                </div>
+                <div class="container right-container">
+
+                    <div class="textbox">
+                        <h4>Hindusthan College of Engineering and Technology</h4>
+                        <p>
+                            Bachelor of Engineering,
+                            Computer Science <br>
+                            2015 - 2019
+                        </p>
+                    </div>
+                    <img src="{{ url_for('static',filename='img/6.png') }}" " alt="">
+                </div>
+                <div class=" container left-container">
+                    <img src="{{ url_for('static',filename='img/7.png') }}" alt="">
+                    <div class="textbox">
+                        <h4>Karunya International Higher Secondary School</h4>
+                        <p>
+                            High School, Computer Science <br>
+                            Jun 2013 - Jun 2015</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <hr>
+    <div class="wrapper">
+        <section class="experience-section">
+            <h2>WORK EXPERIENCE</h2>
+            <div class="timeline">
+                <div class="container left-container" onclick="toggleCollapsibleText(this)">
+                    <div class="textbox">
+                        <h4>Accelerated by Cisco Launchpad</h4>
+                        <p class="description">
+                            Cisco · Full-time <br>
+                            Jan 2023 - Present · 11 mos <br>
+                            India
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+                                Selected startup for Cisco launchpad acceleration program 2023 for Technology and GTM
+                                strategies required to dent the Indian market.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static',filename='img/cisco.png') }}" alt="">
+                </div>
+                <div class="container right-container" onclick="toggleCollapsibleText(this)">
+                    <img src="{{ url_for('static',filename='img/micro.png') }}" alt="">
+                    <div class="textbox">
+
+                        <h4>Microsoft Founder Hub Program <br> - Startup Member</h4>
+                        <p>
+                            Microsoft for Startups · Part-time <br>
+                            Nov 2022 - Present · 1 yr 1 mo <br>
+                            India
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+                                Microsoft for Startups Founders Hub connects founders with industry veterans and access
+                                to startup-friendly training technical guidance including Microsoft Learn, Microsoft’s
+                                comprehensive
+                                learning and skilling platform.Technical support - Network and connect - Startup-centric
+                                training
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container left-container" onclick="toggleCollapsibleText(this)">
+
+                    <div class="textbox">
+                        <h4>Accelerated by NASSCOM 10000 Startups - Incubation <br> Program Member</h4>
+                        <p class="description">
+                            10000 Startups · Full-time <br>
+                            Aug 2022 - Present · 1 yr 4 mos <br>
+                            Kochi, Kerala, India · Remote
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+                                We are one of the selected startup for the Nasscom 10000 startups, This provides
+                                access to experienced mentors, industry experts, and thought leaders to help startups
+                                grow and succeed. - Mentorship - Networking opportunities - Funding Opportunities -
+                                Skill
+                                development - Marketing and PR support We are one of the selected startup for the
+                                Nasscom
+                                10000 startups, This provides access to experienced mentors, industry experts, and
+                                thought
+                                leaders to help startups grow and succeed. - Mentorship - Networking opportunities -
+                                Funding
+                                Opportunities - Skill development - Marketing and PR support
+                            </p>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static',filename='img/nasscom 1.png') }}" alt="">
+                </div>
+                <div class="container right-container" onclick="toggleCollapsibleText(this)">
+                    <img src="{{ url_for('static',filename='img/razorpay_logo 1.png') }}" alt="">
+                    <div class="textbox">
+
+                        <h4>Razor pay - Rize - Incubatee</h4>
+                        <p>
+                            Razorpay · Full-time <br>
+                            Oct 2022 - Present · 1 yr 2 mos <br>
+                            Remote
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Quis rhoncus id mattis
+                                ornare lacus. Sem amet at id eu sit. Eget ac eu et elementum enim
+                                quisque volutpat nisl lectus. Sapien elit lorem eu elit.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container left-container" onclick="toggleCollapsibleText(this)">
+
+                    <div class="textbox">
+                        <h4>GAMERS TAG</h4>
+                        <p class="description">
+                            Full-time · 4 yrs 5 mos <br>
+                            Founder & CEO <br>
+                            Jun 2021 - Present · 2 yrs 6 mos <br>
+                            Kerala, India
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+
+                                <b>Head of Product Development & Product Architect </b> <br>
+                                Jul 2020 - May 2021 · 11 mos <br>
+                                Kochi, Kerala, <br>
+                                For me " Design is concerned with how things act, how they are regulated,
+                                and the nature of human-technology interaction. Designing a high-quality
+                                product by recognising the needs of both novice and experienced users and
+                                meeting them in a well-defined and balanced manner.
+                                <br>
+                                <br>
+                                <b>Research Development Lead</b> <br>
+                                Jul 2019 - Jun 2020 · 1 yr <br>
+                                Kochi, Kerala, India <br>
+                                Extensive research, analysis, and forecasting in analysing customer
+                                requirements with the replacement of our product for existing mechanisums
+                                tests like (AB, UI, Usability) — some written by incentivized reviewers,
+                                some written by non-incentivized reviewers — and then expressing their
+                                interest in using the product in our study.
+
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <img src="{{ url_for('static',filename='img/Logo Gamers tag 1.png') }}" alt="">
+                </div>
+                <div class="container right-container" onclick="toggleCollapsibleText(this)">
+                    <img src="{{ url_for('static',filename='img/btech 1.png') }}"  alt="">
+                    <div class="textbox">
+                        <h4>Btech Traders</h4>
+                        <p>
+                            Full-time · 3 yrs 8 mos <br>
+                            Product Development Lead <br>
+                            May 2019 - Feb 2021 · 1 yr 10 mos
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+                                Working with Multiple android and web projects. Integrating engineered features enabling
+                                the smooth usability. Deep market research in various aspects for projecting the
+                                scalability,
+                                revenue generation, reliability and user experience. <br>
+                                <br>
+                                <b> Product Designer Intern</b> <br>
+                                Jul 2017 - Apr 2019 · 1 yr 10 mos <br>
+                                Creating Ui/UX, Prototypes, Low fidelity designs, Video Editing, Web development and
+                                SEO.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container left-container" onclick="toggleCollapsibleText(this)">
+
+                    <div class="textbox">
+                        <h4>Research Lead</h4>
+                        <p class="description">
+
+                            PartiT · Self-employed <br>
+                            Feb 2017 - Jun 2020 · 3 yrs 5 mos <br>
+                            Kerala, India · Hybrid
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+                                ParkiT is an advanced parking system for vehicles that utilizes Internet of Things (IoT)
+                                and Machine Learning (ML) technologies. It is designed to streamline and optimize the
+                                parking experience for both drivers and parking lot operators.
+                                By leveraging IoT and ML, ParkiT aims to address common parking challenges such as
+                                finding available parking
+                                spaces, reducing congestion, and enhancing overall efficiency.By combining IoT and ML
+                                technologies, ParkiT
+                                aims to optimize parking utilization, reduce traffic congestion, and enhance the overall
+                                parking experience.
+                                It offers convenience to drivers, improves revenue generation for parking lot operators,
+                                and contributes to the development of smarter and more sustainable cities.
+                                Mobile Application - Parking Space Optimisation - Slot Activity & Monitoring - Damage
+                                Control - Automatic Payment and Ticketing - ntegration with Smart City Infrastructure -
+                                Data Analytics & Machine Learning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container right-container" onclick="toggleCollapsibleText(this)">
+                    <img src="{{ url_for('static',filename='img/keltron 1.png') }}"  alt="">
+                    <div class="textbox">
+
+                        <h4>Keltron <br> Internship Trainee</h4>
+                        <p>
+                            Part-time
+                            Oct 2017 - Nov 2017 · 2 mos
+                            Thrissur, Kerala, India
+
+                        </p>
+                        <div class="colapsible-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Quis rhoncus id mattis
+                                ornare lacus. Sem amet at id eu sit. Eget ac eu et elementum enim
+                                quisque volutpat nisl lectus. Sapien elit lorem eu elit.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+    </div>
+
+
+    <!-- Testimonials -->
+    <div class="wrapper">
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>
+                    TESTIMONIALS
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="{{ url_for('static',filename='img/asra.png') }}"  alt="">
+                            <h5>Jishua KANATT</h5>
+                            <span>designation</span>
+                            <p class="content">
+                                Lorem ipsum dolor sit amet consectetur. Quis rhoncus id mattis
+                                ornare lacus. Sem amet at id eu sit. Eget ac eu et elementum enim
+                                quisque volutpat nisl lectus. Sapien elit lorem eu elit.
+                            </p>
+                            <h6 class="Socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-instagram"></i>
+                            </h6>
+                        </div>
+                    </div>  
+                </div>
+                <div class="btn">
+                    <form action="/tesimonial" method="POST">
+                        <input type="submit" name="submit_button" value="Create new testimonial">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </div>
+
+
+    <!-- news page -->
+    <div class="wrapper">
+        <section class="news-section">
+            <h2>NEWS&EVENTS</h2>
+
+            <div class="container">
+                <img src="images/Rectangle.png" alt="ajb">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.
+                        <br>
+                        Read more ->
+                        <br>
+                        june 2 2023
+                    </p>
+                </div>
+
+            </div>
+            <div class="container">
+                <img src="images/Rectangle.png" alt="ajb">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.
+                        <br>
+                        Read more ->
+                        <br>
+                        june 2 2023
+                    </p>
+                </div>
+
+            </div>
+            <div class="container">
+                <img src="images/Rectangle.png" alt="ajb">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.
+                        <br>
+                        Read more ->
+                        <br>
+                        june 2 2023
+                    </p>
+                </div>
+
+            </div>
+            <div class="container">
+                <img src="images/Rectangle.png" alt="ajb">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.
+                        <br>
+                        Read more ->
+                        <br>
+                        june 2 2023
+                    </p>
+                </div>
+
+            </div>
+            <div class="container">
+                <img src="images/Rectangle.png" alt="ajb">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Laoreet donec a sodales dictum porttitor eget.
+                        <br>
+                        Read more ->
+                        <br>
+                        june 2 2023
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <hr>
+
+
+
+
+    <!-- CONTACTUS -->
+    <div class="wrapper">
+        <section class="contactus-section">
+            <div class="contact">
+                <div class="container left-container">
+                    <form action="/contactus" method="POST" class="form">
+                        <div class="info">
+                            <p>Nam*</p>
+                            <input type="text"  name="fname" required>
+                            <p>Email</p>
+                            <input type="text" name="email">
+                            <p>Mobile number</p>
+                            <input type="text" name="mobile_number">
+                        </div>
+                        <p>Message</p>
+                        <div>
+                            <textarea rows="5" name="message"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="right">
+                    <h2>LETS GET IN TOUCH <br>I WOULD LOVE TO HEAR FROM YOU</h2>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <!-- completed -->
+
+
+
+    <footer class="footer">
+
+    </footer>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
