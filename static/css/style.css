@@ -188,11 +188,61 @@ header hr {
   margin: 100px auto;
 }
 .education-section .container{
-  padding: 10px 10px;
+  padding: 10px;
   position: relative;
   width: 50%;
   display: flex;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  animation: movedown 1s linear forwards;
+  opacity: 0;
 }
+
+@keyframes movedown{
+    0%{
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  
+}
+
+
+.education-section .container:nth-child(1){
+  animation-delay: 0s;
+
+}
+.education-section .container:nth-child(2){
+  animation-delay: 1s;
+
+}
+.education-section .container:nth-child(2){
+  animation-delay: 2s;
+
+}
+.education-section .container:nth-child(3){
+  animation-delay: 3s;
+
+}
+.education-section .container:nth-child(4){
+  animation-delay: 4s;
+
+}
+.education-section .container:nth-child(5){
+  animation-delay: 5s;
+
+}
+.education-section .container:nth-child(6){
+  animation-delay: 6s;
+
+}
+.education-section .container:nth-child(7){
+  animation-delay: 7s;
+
+}
+
 .education-section .textbox{
   padding: 10px 50px;
   position: relative;
@@ -208,15 +258,18 @@ header hr {
 
 .education-section .left-container{
   left: 0%;
-  text-align: right;
+  padding-right: 32px;
+
 }
 .education-section .right-container{
   left: 50%;
+  padding-left: 22px;
 }
 .education-section .container img{
-  width: 130px;
-  height: 130px;
-
+  width: 200px;
+  height: 200px;
+  padding-top: 72px;
+  
 }
 .education-section .timeline::after{
   content: '';
@@ -228,6 +281,18 @@ header hr {
   left: 50%;
   margin-left: -3px;
   z-index: -1;
+  animation: moveline 6s linear forwards;
+}
+
+
+@keyframes moveline {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 100%;
+  }
+  
 }
 .education-section .textbox p{
   color: #FFF;
@@ -243,6 +308,58 @@ header hr {
   font-weight: 400;
 
 }
+
+
+@media screen and (max-width: 600px) {
+  .education-section .timeline{
+    margin:10px 10px;
+
+  }
+  .education-section .timeline::after{
+    left: 0px;
+  }
+  .education-section .container{
+    width: 100%;
+    padding-left:70px;
+    padding-right:25px;
+    margin: 5%;
+  }
+  .education-section .textbox{
+    font-size: 13px;
+  }
+  .education-section .right-container{
+    left: 0;
+  }
+  .education-section .left-container img{
+    position: absolute;
+    width: 100px;
+    left: 0%;
+    padding-left: 21px;
+
+  }
+  .education-section .right-container img{
+    position: absolute;
+    width: 100px;
+    left: 0%;
+    padding-left: 21px;
+  }
+  .education-section .left-container .textbox{
+    left: 20%;
+  }
+  .education-section .right-container .textbox{
+    left: 20%;
+  }
+  .wrapper{
+    margin: 20px;
+  }
+}
+
+
+
+
+
+
+/* educaion section end */
 
 .experience-section .timeline{
   position: relative;
@@ -367,7 +484,46 @@ header hr {
 }
 
 
+@media screen and (max-width: 600px) {
+  .experince-section .timeline{
+    margin:10px 10px;
 
+  }
+  .experience-section .timeline::after{
+    left: 0px;
+  }
+  .experience-section .container{
+    width: 100%;
+    padding-left:70px;
+    padding-right:25px;
+    margin: 5%;
+  }
+  .experience-section .textbox{
+    font-size: 13px;
+  }
+  .experience-section .right-container{
+    left: 0;
+  }
+  .experience-section .left-container img{
+    position: absolute;
+    width: 100px;
+    left: 0%;
+    padding-left: 21px;
+
+  }
+  .experience-section .right-container img{
+    position: absolute;
+    width: 100px;
+    left: 0%;
+    padding-left: 21px;
+  }
+  .experience-section .left-container .textbox{
+    left: 20%;
+  }
+  .experience-section .right-container .textbox{
+    left: 20%;
+  }
+}
 
 
 
@@ -659,7 +815,7 @@ nav.mobile-nav{
 
 @media(max-width:800px) {
     .wrapper{
-      padding: 0 100px;
+      padding: 0 0px;
     }
     .hero-section {
       flex-direction: column;
