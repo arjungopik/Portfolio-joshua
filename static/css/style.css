@@ -9,6 +9,9 @@
   box-sizing: border-box;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   font-family:"poppins",sans-serif;
@@ -27,11 +30,13 @@ header {
   padding: 20px 0;
 }
 nav {
-  margin-right: 80px;
+  margin-right:30px;
   top: 6px;
   z-index: 100;
-  align-items: flex-end;
-  /* position: fixed; */
+  align-items: end;
+  position: fixed;  
+  right: 0;
+
   /* width: 1134px; */
 }
 nav ul{
@@ -49,6 +54,9 @@ nav ul li a{
   font-weight: 400;
   text-decoration: none;
 
+}
+nav ul li a:hover{
+  color:#FFF;
 }
 /* hero section */
 .hero-section {
@@ -85,7 +93,7 @@ nav ul li a{
   font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
-
+  max-width: 600px;
 }
 .hero-section .left{
   width: 50%;
@@ -97,6 +105,7 @@ nav ul li a{
 .hero-section .right{
   margin-top: 100px;
   flex: 1;
+ 
 }
 
 
@@ -193,8 +202,30 @@ header hr {
   width: 50%;
   display: flex;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s ease, border 0.5s ease;
   animation: movedown 1s linear forwards;
   opacity: 0;
+}
+.education-section .container:hover {
+  border: 2px solid #FFF;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.education-section .container:hover h4 {
+  font-size: 30px;
+}
+
+.education-section .container:hover p {
+  font-size: 19px;
+}
+
+.education-section .container img {
+  width: 130px;
+  height: 130px;
+}
+.education-section .textbox h4,
+.education-section .textbox p {
+  transition: font-size 0.5s ease;
 }
 
 @keyframes movedown{
@@ -373,8 +404,9 @@ header hr {
   display: flex;
   gap: 10px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease, border 0.3s ease, text-align 0.9s ease;
-
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+  transition: box-shadow 0.5s ease, border 0.5s ease;
 }
 .experience-section .container.centered {
   text-align: center; 
@@ -410,9 +442,7 @@ header hr {
   right: 25px;
   top: 45px;
 }
-.experience-section .container.centered:hover .container-img {
-  transform: translate(-50%, -50%) scale(1.1); /* Move to top and scale up on hover */
-}
+
 .experience-section .timeline::after{
   content: '';
   position: absolute;
@@ -423,6 +453,7 @@ header hr {
   left: 50%;
   margin-left: -3px;
   z-index: -1;
+  animation: moveline 6s linear forwards;
 }
 .experience-section .textbox p{
   color: #FFF;
@@ -454,11 +485,7 @@ header hr {
 }
 
 .experience-section .container {
-  padding: 10px 10px;
-  position: relative;
-  width: 50%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.5s ease, border 0.5s ease;
+  
 }
 
 .experience-section .container:hover {
@@ -525,33 +552,17 @@ header hr {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* testimonail */
 .testimonial-section h2{
   text-align: center;
   color: #FFF;
   font-family: Jost;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 400;
 }
 
 .testimonial-section .container{
   max-width: 1865px;
-  margin: auto;
-  overflow:hidden;
-  padding-left: 20px;
 
 }
 .testimonial-section .container input{
@@ -565,7 +576,7 @@ header hr {
   font-weight: 400;
   color:  #FFF;
 }
-.testimonial-section .container button:hover {
+.testimonial-section .container input:hover {
   background: #fff;
   color: #000;
   } 
@@ -580,29 +591,58 @@ header hr {
   flex: 33.33%;
   max-width: 33.33%;
   box-sizing: border-box;
-  padding: 25px;
+  padding:  25px;
 }
 .testimonial{
-  background: rgba(255, 255, 255, 0.13);
   border-radius: 40px;
-  height: 374px;
-  width: 523px;
+  background: rgba(0, 0, 0, 0.25);
+  /* mix-blend-mode: overlay; */
+  height: 350px;
+  margin:30px;
+  padding: 40px;
 }
-.testimonial img{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.testimonial-section .testimonial p{
+  color: #FFF;
+  font-family: Jost;
+  font-size: 15px;
+  font-weight: 400;
 }
+
 .testimonial-section h2{
   color: #FFF;
   font-family: Jost;
-  font-size: 71px;
+  font-size: 51px;
   font-weight: 400;
+}
+
+.testimonial-section h5{
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 11px;
+
+  margin-bottom: 5px;
+}
+
+.testimonial-section h4{
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 400;
+  margin:0 auto;
+  opacity: 0.2;
 }
 @media screen and (max-width:960px) {
    .testimonial-section .col{
     flex: 100%;
     max-width: 80%;
+  }
+  .testimonial-section .container input{
+    position: relative;
+    left: 35%;
   }
   
 }
@@ -617,6 +657,13 @@ header hr {
   .testimonial-section .col{
     flex: 100%;
     max-width:100%;
+  }
+  .testimonial-section .testimonial{
+    width: 50%;
+    min-width: 350px;
+    position: relative;
+    margin: auto;
+    padding:  45px 10px;
   }
   
 }
@@ -813,7 +860,7 @@ nav.mobile-nav{
 }
 
 
-@media(max-width:800px) {
+@media(max-width:900px) {
     .wrapper{
       padding: 0 0px;
     }
@@ -830,12 +877,13 @@ nav.mobile-nav{
       top: -11px;
     }
     .hero-section .left img{
-      width: 304px;
+      width: 359px;
       height: 413px;
     }
 
     .hero-section .right{
       position: absolute;
+      text-align: center;
       top: 40%;
       width: 100%;
       padding: 20px;
@@ -863,7 +911,6 @@ nav.mobile-nav{
       text-align: center;
       font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
       font-weight: 400;
       line-height: 21px; /* 150% */
     }
@@ -875,7 +922,7 @@ nav.mobile-nav{
       justify-content: right;
       position: absolute;
       top: 30px;
-      right: -39px;
+      right: -9px;
     }
     .menu-icon img{
       width: 30px;

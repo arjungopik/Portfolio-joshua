@@ -16,21 +16,51 @@
 <body>
     <div class="wrapper">
         <section class="testimonial_creation">
-            <h2>Create testimonial</h2>
+            <h2>TESTIMONIALS</h2>
             <form action="/testimonial_creation" method="POST" class="form">
                 <div class="info">
-                    <p>Name*</p>
-                    <input type="text"  name="fname" required>
-                    <p>Email</p>
-                    <input type="text" name="email">
-                    <p>Mobile number</p>
-                    <input type="text" name="mobile_number">
+                    <div class="row">
+                        <div class="col">
+                            <p>Name*</p>
+                        <input type="text"  name="fname" required>
+                        </div>
+                        <div class="col">
+                            <p>Email</p>
+                        <input type="text" name="email">
+                        </div>
+                        <div class="col">
+                            <p>Mobile number</p>
+                            <input type="text" name="mobile_number">
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Linkedin link</p>
+                            <input type="text"  name="linkedin" >
+                        </div>
+                        <div class="col">
+                            <p>Twitter </p>
+                        <input type="text" name="twitter">
+                        </div>
+                        <div class="col">
+                            <p>Facebook</p>
+                        <input type="text" name="facebook">
+                        </div>
+                        
+                    </div>
+                    
                 </div>
-                <p>Message</p>
-                <div>
-                    <textarea rows="5" name="message"></textarea>
+                <div class="msg">
+                    <p>Message</p>
+                    <div>
+                        <textarea rows="5" name="message"></textarea>
+                    </div>
                 </div>
-                <button type="submit">Submit</button>
+                <div class="btns">
+                    <button type="submit">Post comment</button>
+                </div>
+                
             </form>
         </section>
     </div>

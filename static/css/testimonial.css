@@ -13,11 +13,12 @@
 body{
   margin: 0;
   font-family:"poppins",sans-serif;
-  background: var(--dark-color);
+  background:#000;;
 }
 .wrapper{
   margin: 0 auto;
   text-align: center;
+  max-width: 1100px;
 
 }
 
@@ -25,11 +26,66 @@ body{
     text-align: center;
     color: rgba(255, 255, 255, 0.50);
     font-family: Poppins;
-    font-size: 34px;
+    font-size: 44px;
     font-weight: 400;
   
 }
 .wrapper .testimonial_creation input{
-
-    width: 50%;
+  width: 316px;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  background: #0F0E0E;
+  margin: 11px;
 } 
+.wrapper .info .row{
+  display: flex;
+  justify-content: center;
+  margin: 44px 0;
+}
+.wrapper .info p{
+  color: #FFF;
+font-family: Jost;
+font-size: 25px;  
+font-weight: 400;
+text-align: left;
+padding-left: 11px;
+margin: 0;
+}
+.wrapper .msg p{
+  color: #FFF;
+  font-family: Jost;
+  font-size: 25px;  
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  left: 5%;
+  
+}
+.wrapper .msg textarea{
+  width: 90%;
+  height: 186px;
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  background: #0F0E0E;
+}
+.wrapper button{
+  border-radius: 10px;
+  border: 1px solid #FFF;
+  background: #FFF;
+  width: 275px;
+  height: 42px;
+  margin: 11px; 
+  color: #000;
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrapper input,textarea{
+  color: #FFF;
+}
+.wrapper .btns{
+  display: flex;
+  justify-content: flex-end;
+  padding:10px 52px;
+}

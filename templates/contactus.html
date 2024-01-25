@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Enquiries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">`
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/testimonial_entry.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head_t">
+            <h2>
+                Contacts 
+            </h2>
+            <div class="newtests">
+                <h3>{{ tps_data | count }} New </h3>
+            </div>
+        </div>
+        <div class="new_entry">
+            {% for data in tps_data %}
+            <div class="entries">
+                <h4>{{ data.name }}</h4>
+                <h6>founder of abc</h6>
+                <p>{{ data.message }}</p>
+                <div class="btns">
+                    <button>Delete</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
